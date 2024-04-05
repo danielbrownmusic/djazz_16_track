@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 252.0, 100.0, 1769.0, 754.0 ],
+		"rect" : [ 252.0, 100.0, 997.0, 717.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 164.0, 400.0, 24.0, 24.0 ]
+					"patching_rect" : [ 21.0, 148.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 218.0, 482.0, 69.0, 22.0 ],
+					"patching_rect" : [ 75.0, 230.0, 69.0, 22.0 ],
 					"text" : "metro 1000"
 				}
 
@@ -132,11 +132,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 2,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.5, 635.618159294128418, 30.0, 30.0 ]
+					"patching_rect" : [ 83.5, 383.618159294128418, 30.0, 30.0 ]
 				}
 
 			}
@@ -149,7 +149,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 226.5, 544.0, 30.0, 30.0 ],
+					"patching_rect" : [ 83.5, 292.0, 30.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 8.0, 80.429905593395233, 80.429905593395233 ]
 				}
@@ -4009,7 +4009,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1408.0, 344.284974634647369, 86.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 283.559640414382557, 13.429905593395233, 206.845179792808722, 22.0 ]
+					"presentation_rect" : [ 283.559640414382557, 13.429905593395233, 206.845179792808722, 22.0 ],
+					"text" : "grid_data_1"
 				}
 
 			}
@@ -4944,7 +4945,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-78",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -4962,7 +4963,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 184.0, 102.0, 96.0, 49.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ -1151, -78, -281, 981 ],
+						"client_rect" : [ -2036, -93, -1166, 966 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
