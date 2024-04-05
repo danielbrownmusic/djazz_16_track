@@ -1,0 +1,4 @@
+whenever ($tab)
+          {
+                AnteOut "I just received the vector " $tab
+          }
