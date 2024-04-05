@@ -1,0 +1,9 @@
+@tempovar $pos_to_play(60,1)
+
+$last := $NOW
+whenever ($pos_to_play)
+{
+	AnteOut ($pos_to_play.tempo)
+    print interval ($NOW - $last)
+    $last := $NOW
+} 
