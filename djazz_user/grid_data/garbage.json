@@ -1,0 +1,40 @@
+{
+	"chapters" : [ 		{
+			"beats" : [ 				{
+					"label" : 					{
+						"root" : 0,
+						"type" : "M7"
+					}
+
+				}
+, 				{
+					"label" : 					{
+						"type" : "M7",
+						"root" : 0
+					}
+
+				}
+, 				{
+					"label" : 					{
+						"root" : 5,
+						"type" : "7"
+					}
+
+				}
+, 				{
+					"label" : 					{
+						"type" : "7",
+						"root" : 5
+					}
+
+				}
+ ]
+		}
+, 		{
+
+		}
+, 		{
+
+		}
+ ]
+}
