@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 143.0, 1333.0, 751.0 ],
+		"rect" : [ 68.0, 279.0, 1568.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,29 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-22",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "djazz_antescofo_player_oracle_view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 318.0, 283.250000533546427, 170.833298325538635, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1186.362866860420127, 15.0, 169.0, 72.0 ],
+					"varname" : "factor_oracle",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.192156862745098, 0.192156862745098, 0.211764705882353, 1.0 ],
 					"id" : "obj-19",
 					"maxclass" : "textbutton",
@@ -49,7 +72,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 799.833298325538635, 20.833346179382261, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1283.362866860420127, 4.333333492279053, 100.0, 20.0 ],
+					"presentation_rect" : [ 8.362866860420127, 204.333333492279053, 100.0, 20.0 ],
 					"text" : "debug view",
 					"texton" : "debug view"
 				}
@@ -83,7 +106,7 @@
 				"box" : 				{
 					"comment" : "presets",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -95,7 +118,7 @@
 				"box" : 				{
 					"comment" : "components (unused)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -108,11 +131,11 @@
 				"box" : 				{
 					"comment" : "(bang) pulse (unused)",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 63.0, -84.666667342185974, 30.0, 30.0 ]
 				}
 
@@ -206,7 +229,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -665,8 +688,8 @@
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -678,7 +701,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 119.0, 685.0, 705.0 ],
+						"rect" : [ 373.0, 267.0, 1026.0, 816.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -706,7 +729,44 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 2,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 672.0, 518.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 648.0, 408.0, 91.0, 22.0 ],
+									"text" : "route dictionary"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 538.0, 256.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-42",
 									"maxclass" : "dict.view",
@@ -2558,6 +2618,906 @@
 												}
 
 											}
+,
+											"chords" : 											{
+												"beats" : [ 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 0,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 10,
+															"type" : "maj7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 9,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 6,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 6,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 5,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 4,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 4,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 3,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 2,
+															"type" : "m7b5"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+, 													{
+														"label" : 														{
+															"root" : 7,
+															"type" : "m7"
+														}
+
+													}
+ ]
+											}
 
 										}
  ],
@@ -2619,8 +3579,31 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 0 ],
+									"watchpoint_flags" : 2,
+									"watchpoint_id" : 8
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-31", 0 ]
 								}
 
 							}
@@ -2855,7 +3838,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1234.083303570747375, 412.250002412540425, 477.5, 307.500002679313639 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 827.725829624713697, 4.333333492279053, 445.0, 228.0 ],
+					"presentation_rect" : [ 827.725829624713697, 4.333333492279053, 540.0, 228.0 ],
 					"varname" : "midi_player_1",
 					"viewvisibility" : 1
 				}
@@ -2865,7 +3848,7 @@
 				"box" : 				{
 					"comment" : "presets",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2926,7 +3909,7 @@
 				"box" : 				{
 					"comment" : "components",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2938,7 +3921,7 @@
 				"box" : 				{
 					"comment" : "(bang) pulse",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2950,7 +3933,7 @@
 				"box" : 				{
 					"comment" : "ctrl params",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2968,7 +3951,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 677.833304643630981, 143.083328181674915, 109.999993681907654, 62.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1037, 128, 1515, 659 ],
+						"client_rect" : [ 590, 251, 1460, 1079 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -3007,7 +3990,7 @@
 				"box" : 				{
 					"comment" : "from model out -- view params",
 					"id" : "obj-60",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3129,6 +4112,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-45", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"midpoints" : [ 53.166567087173462, 313.416664208599059, 111.833195209503174, 313.416664208599059 ],
 					"order" : 1,
@@ -3191,393 +4181,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-10::obj-15::obj-12::obj-7" : [ "midi_player_1_loop_5", "midi_player_1_loop_5", 0 ],
-			"obj-10::obj-15::obj-13::obj-7" : [ "midi_player_1_loop_6", "midi_player_1_loop_6", 0 ],
-			"obj-10::obj-15::obj-14::obj-7" : [ "midi_player_1_loop_7", "midi_player_1_loop_7", 0 ],
-			"obj-10::obj-15::obj-40::obj-7" : [ "midi_player_1_loop_1", "midi_player_1_loop_1", 0 ],
-			"obj-10::obj-15::obj-41::obj-7" : [ "midi_player_1_loop_2", "midi_player_1_loop_2", 0 ],
-			"obj-10::obj-15::obj-44::obj-7" : [ "midi_player_1_loop_3", "midi_player_1_loop_3", 0 ],
-			"obj-10::obj-15::obj-45::obj-7" : [ "midi_player_1_loop_4", "midi_player_1_loop_4", 0 ],
-			"obj-10::obj-15::obj-46::obj-7" : [ "midi_player_1_loop_8", "midi_player_1_loop_8", 0 ],
-			"obj-10::obj-17::obj-34::obj-7" : [ "midi_player_1_speed_button_1/2", "midi_player_1_speed_button_1/2", 0 ],
-			"obj-10::obj-17::obj-37::obj-7" : [ "midi_player_1_speed_button_3/2", "midi_player_1_speed_button_3/2", 0 ],
-			"obj-10::obj-17::obj-38::obj-7" : [ "midi_player_1_speed_button_2", "midi_player_1_speed_button_2", 0 ],
-			"obj-10::obj-17::obj-39::obj-7" : [ "midi_player_1_speed_button_4", "midi_player_1_speed_button_4", 0 ],
-			"obj-12::obj-15::obj-12::obj-7" : [ "midi_player_2_loop_5", "midi_player_2_loop_5", 0 ],
-			"obj-12::obj-15::obj-13::obj-7" : [ "midi_player_2_loop_6", "midi_player_2_loop_6", 0 ],
-			"obj-12::obj-15::obj-14::obj-7" : [ "midi_player_2_loop_7", "midi_player_2_loop_7", 0 ],
-			"obj-12::obj-15::obj-40::obj-7" : [ "midi_player_2_loop_1", "midi_player_2_loop_1", 0 ],
-			"obj-12::obj-15::obj-41::obj-7" : [ "midi_player_2_loop_2", "midi_player_2_loop_2", 0 ],
-			"obj-12::obj-15::obj-44::obj-7" : [ "midi_player_2_loop_3", "midi_player_2_loop_3", 0 ],
-			"obj-12::obj-15::obj-45::obj-7" : [ "midi_player_2_loop_4", "midi_player_2_loop_4", 0 ],
-			"obj-12::obj-15::obj-46::obj-7" : [ "midi_player_2_loop_8", "midi_player_2_loop_8", 0 ],
-			"obj-12::obj-17::obj-34::obj-7" : [ "midi_player_2_speed_button_1/2", "midi_player_2_speed_button_1/2", 0 ],
-			"obj-12::obj-17::obj-37::obj-7" : [ "midi_player_2_speed_button_3/2", "midi_player_2_speed_button_3/2", 0 ],
-			"obj-12::obj-17::obj-38::obj-7" : [ "midi_player_2_speed_button_2", "midi_player_2_speed_button_2", 0 ],
-			"obj-12::obj-17::obj-39::obj-7" : [ "midi_player_2_speed_button_4", "midi_player_2_speed_button_4", 0 ],
-			"obj-13::obj-11::obj-7" : [ "octave_up_2", "octave_up_2", 0 ],
-			"obj-13::obj-12::obj-7" : [ "octave_up_3", "octave_up_3", 0 ],
-			"obj-13::obj-13::obj-7" : [ "octave_up_4", "octave_up_4", 0 ],
-			"obj-13::obj-14::obj-7" : [ "octave_down_1", "octave_down_1", 0 ],
-			"obj-13::obj-15::obj-7" : [ "octave_down_2", "octave_down_2", 0 ],
-			"obj-13::obj-16::obj-7" : [ "octave_down_3", "octave_down_3", 0 ],
-			"obj-13::obj-17::obj-7" : [ "octave_down_4", "octave_down_4", 0 ],
-			"obj-13::obj-24::obj-7" : [ "no_octave", "no_octave", 0 ],
-			"obj-13::obj-6::obj-7" : [ "octave_up_1", "octave_up_1", 0 ],
-			"obj-13::obj-8" : [ "octave_transposition", "octave_transposition", 0 ],
-			"obj-47::obj-16::obj-1" : [ "loop_chapter", "loop_chapter", 0 ],
-			"obj-47::obj-85::obj-5::obj-21" : [ "grid", "grid", 0 ],
-			"obj-47::obj-85::obj-5::obj-28" : [ "chapter_count", "chapter_count", 0 ],
-			"obj-47::obj-94::obj-22::obj-24" : [ "chapter_button", "chapter_button", 0 ],
-			"obj-47::obj-94::obj-22::obj-25" : [ "bar_button", "bar_button", 0 ],
-			"obj-6::obj-11::obj-1" : [ "track_2_solo", "led[1]", 0 ],
-			"obj-6::obj-11::obj-2" : [ "track_2_mute", "led", 0 ],
-			"obj-6::obj-14::obj-1" : [ "track_3_solo", "led[1]", 0 ],
-			"obj-6::obj-14::obj-2" : [ "track_3_mute", "led", 0 ],
-			"obj-6::obj-16::obj-1" : [ "track_4_solo", "led[1]", 0 ],
-			"obj-6::obj-16::obj-2" : [ "track_4_mute", "led", 0 ],
-			"obj-6::obj-18::obj-1" : [ "track_5_solo", "led[1]", 0 ],
-			"obj-6::obj-18::obj-2" : [ "track_5_mute", "led", 0 ],
-			"obj-6::obj-20::obj-1" : [ "track_6_solo", "led[1]", 0 ],
-			"obj-6::obj-20::obj-2" : [ "track_6_mute", "led", 0 ],
-			"obj-6::obj-22::obj-1" : [ "track_7_solo", "led[1]", 0 ],
-			"obj-6::obj-22::obj-2" : [ "track_7_mute", "led", 0 ],
-			"obj-6::obj-24::obj-1" : [ "track_8_solo", "led[1]", 0 ],
-			"obj-6::obj-24::obj-2" : [ "track_8_mute", "led", 0 ],
-			"obj-6::obj-26::obj-1" : [ "track_9_solo", "led[1]", 0 ],
-			"obj-6::obj-26::obj-2" : [ "track_9_mute", "led", 0 ],
-			"obj-6::obj-28::obj-1" : [ "track_10_solo", "led[1]", 0 ],
-			"obj-6::obj-28::obj-2" : [ "track_10_mute", "led", 0 ],
-			"obj-6::obj-30::obj-1" : [ "track_11_solo", "led[1]", 0 ],
-			"obj-6::obj-30::obj-2" : [ "track_11_mute", "led", 0 ],
-			"obj-6::obj-32::obj-1" : [ "track_12_solo", "led[1]", 0 ],
-			"obj-6::obj-32::obj-2" : [ "track_12_mute", "led", 0 ],
-			"obj-6::obj-34::obj-1" : [ "track_13_solo", "led[1]", 0 ],
-			"obj-6::obj-34::obj-2" : [ "track_13_mute", "led", 0 ],
-			"obj-6::obj-36::obj-1" : [ "track_14_solo", "led[1]", 0 ],
-			"obj-6::obj-36::obj-2" : [ "track_14_mute", "led", 0 ],
-			"obj-6::obj-38::obj-1" : [ "track_15_solo", "led[1]", 0 ],
-			"obj-6::obj-38::obj-2" : [ "track_15_mute", "led", 0 ],
-			"obj-6::obj-40::obj-1" : [ "track_16_solo", "led[1]", 0 ],
-			"obj-6::obj-40::obj-2" : [ "track_16_mute", "led", 0 ],
-			"obj-6::obj-9::obj-1" : [ "track_1_solo", "led[1]", 0 ],
-			"obj-6::obj-9::obj-2" : [ "track_1_mute", "led", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "db_dictionary_array_utils.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/code/tools",
-				"patcherrelativepath" : "../../code/tools",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_PARAMS_CTRL_master_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
-				"patcherrelativepath" : "../params",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_PARAMS_CTRL_midi_gen_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
-				"patcherrelativepath" : "../params",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_PARAMS_VIEW_master_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
-				"patcherrelativepath" : "../params",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_PARAMS_VIEW_midi_gen_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
-				"patcherrelativepath" : "../params",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_PARAMS_grid_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
-				"patcherrelativepath" : "../params",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_PARAMS_grid_view_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
-				"patcherrelativepath" : "../params",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_beat_bar_chapter_to_beat.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_beat_to_beat_bar_chapter.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_components_midi_out_effect_list_view.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/code/midiout",
-				"patcherrelativepath" : "../../code/midiout",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_get_bar_count.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_get_chapter_count.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_get_chapter_start_and_end_beats.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_get_navigation_file_path.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/code/file_io",
-				"patcherrelativepath" : "../../code/file_io",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_grid_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_grid_view_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_loop_control_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
-				"patcherrelativepath" : "../midiplayer",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_master_clock_view_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/master",
-				"patcherrelativepath" : "../master",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_master_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/master",
-				"patcherrelativepath" : "../master",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_master_view_beat_out.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/master",
-				"patcherrelativepath" : "../master",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_metro_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/beatclock",
-				"patcherrelativepath" : "../beatclock",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_gen_view_tempo_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
-				"patcherrelativepath" : "../midiplayer",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_out_bank_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiout",
-				"patcherrelativepath" : "../midiout",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_out_effect_list_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiout",
-				"patcherrelativepath" : "../midiout",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_out_solo_bank_view.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/code/midiout",
-				"patcherrelativepath" : "../../code/midiout",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_out_track_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiout",
-				"patcherrelativepath" : "../midiout",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_out_track_view_outport.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiout",
-				"patcherrelativepath" : "../midiout",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_midi_player_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
-				"patcherrelativepath" : "../midiplayer",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_navigate_bar_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_navigate_chapter_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_navigate_view_chapter_bar_beat.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/grid",
-				"patcherrelativepath" : "../grid",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_number_button.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/tools/gui",
-				"patcherrelativepath" : "../tools/gui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_range.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/tools/iterators",
-				"patcherrelativepath" : "../tools/iterators",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_score_file_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/song file io",
-				"patcherrelativepath" : "../song file io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_select_score_file_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/song file io",
-				"patcherrelativepath" : "../song file io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_session_file.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/code/file_io",
-				"patcherrelativepath" : "../../code/file_io",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_speed_button.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/tools/gui",
-				"patcherrelativepath" : "../tools/gui",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_speed_control_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
-				"patcherrelativepath" : "../midiplayer",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_transpose_octave_controller.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midi effects/transpose octave",
-				"patcherrelativepath" : "../midi effects/transpose octave",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_view_load_score_files.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/song file io",
-				"patcherrelativepath" : "../song file io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_view_load_song_folder.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/song file io",
-				"patcherrelativepath" : "../song file io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_view_session_file.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/song file io",
-				"patcherrelativepath" : "../song file io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pattrinit.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/code/pattr",
-				"patcherrelativepath" : "../../code/pattr",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"editing_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 	}
