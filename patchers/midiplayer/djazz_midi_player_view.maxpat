@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 5,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 58.0, 182.0, 1945.0, 841.0 ],
+		"rect" : [ 34.0, 182.0, 1945.0, 841.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-22",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "djazz_antescofo_player_oracle_view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 188.0, 485.250000533546427, 170.833298325538635, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 351.362866860420127, 4.0, 163.0, 102.0 ],
+					"varname" : "factor_oracle",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
@@ -291,9 +315,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"midpoints" : [ 74.600000000000023, 280.5, 1158.599999999999909, 280.5 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -302,7 +333,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"midpoints" : [ 74.600000000000023, 281.0, 364.0, 281.0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -311,7 +342,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 74.600000000000023, 286.0, 74.600000000000023, 286.0 ],
-					"order" : 1,
+					"order" : 2,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -320,7 +359,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"midpoints" : [ 74.600000000000023, 280.5, 682.0, 280.5 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -361,63 +400,70 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "djazz_PARAMS_CTRL_midi_gen_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/params",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
 				"patcherrelativepath" : "../params",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_PARAMS_VIEW_midi_gen_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/params",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/params",
 				"patcherrelativepath" : "../params",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "djazz_antescofo_player_oracle_view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "djazz_loop_control_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/midiplayer",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_master_clock_view_ctrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/master",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/master",
 				"patcherrelativepath" : "../master",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_midi_gen_view_tempo_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/midiplayer",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_number_button.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/tools",
-				"patcherrelativepath" : "../tools",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/tools/gui",
+				"patcherrelativepath" : "../tools/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_score_file_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/song file io",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/song file io",
 				"patcherrelativepath" : "../song file io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_speed_button.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/tools",
-				"patcherrelativepath" : "../tools",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/tools/gui",
+				"patcherrelativepath" : "../tools/gui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_speed_control_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_db/patchers/midiplayer",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz_16_track/patchers/midiplayer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
